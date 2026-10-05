@@ -647,3 +647,8 @@ section[id]{scroll-margin-top:var(--section-header-offset,140px)}
  .app-card .app-stat:not(.restaurant-stat):not([hidden])>dd{padding:0;margin:0;text-align:left;justify-self:stretch;min-width:0;line-height:1.5}
  .app-card .app-stat[data-model-stat] dd{font-size:1.02rem}
 }
+
+/* Preserve the source strip's 3:1 ratio. Unequal scene crops must not use
+   one forced image height, which flattened the phone and stretched others. */
+.step-art{aspect-ratio:4/5}
+.step-art img{height:auto;aspect-ratio:3/1;object-fit:contain;top:50%;transform:translateY(-50%)}
