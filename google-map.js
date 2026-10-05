@@ -51,9 +51,9 @@ window.LocalFiftyGoogleMap = (() => {
  }
  function updateLabels(){
   const language=latest.language,ix={en:0,es:1,pt:2}[language]??0,frame=document.querySelector('.watercolor-map');
-  frame.classList.add('street-map-frame');frame.querySelector('.map-topline .eyebrow').textContent=['Pickup areas','Áreas de recogida','Áreas de retirada'][ix];
-  frame.querySelector('.map-art-caption').textContent=['Choose a numbered area','Elige un área numerada','Escolha uma área numerada'][ix];
-  document.querySelector('[data-t="mapSource"]').textContent=['Map: Google Maps. Highlighted areas and restaurant counts: our area guide.','Mapa: Google Maps. Áreas destacadas y restaurantes: nuestra guía de áreas.','Mapa: Google Maps. Áreas destacadas e restaurantes: nosso guia de áreas.'][ix];
+  frame.classList.add('street-map-frame');frame.querySelector('.map-topline .eyebrow').textContent=t('mapEyebrow');
+  frame.querySelector('.map-art-caption').textContent=t('mapChoose');
+  document.querySelector('[data-t="mapSource"]').textContent=t('mapCreditGoogle');
   const link=document.querySelector('.map-source-link');link.href='https://maps.google.com/?q='+latest.zones[0].center.lat+','+latest.zones[0].center.lng;link.textContent=['Open in Google Maps ↗','Abrir en Google Maps ↗','Abrir no Google Maps ↗'][ix];
   host.setAttribute('aria-label',['Map of pickup areas','Mapa de áreas de recogida','Mapa de áreas de retirada'][ix]);
   layers.forEach(({marker},i)=>{if(marker.button){marker.button.title=latest.labels[i];marker.button.setAttribute('aria-label',(i+1)+'. '+latest.labels[i]);}});
