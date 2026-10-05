@@ -276,7 +276,7 @@ function renderRound7(){
  document.querySelector('#goal [data-t="goalTitle"]').textContent=t('goalSavingsTitle');
  document.querySelectorAll('.checklist label').forEach((label,i)=>{if(!label.querySelector('.requirement-art'))label.querySelector('input').insertAdjacentHTML('afterend',requirementIllustration(i));});
  // Zack requested Waltham-specific ages; verified against official MA/Waltham pages.
- if(D?.meta?.town==='Waltham')document.querySelector('[data-t="req6"]').textContent=t('presentation8');
+ if(D?.meta?.town==='Waltham')document.querySelector('[data-t="req6"]').textContent=t('walthamRequirementsSummary');
  document.querySelector('.watercolor-map').classList.toggle('map-large-type',parseFloat(getComputedStyle(document.documentElement).fontSize)>=24);
  document.querySelectorAll('.section-number').forEach(el=>el.remove());
  document.querySelectorAll('.section-nav a').forEach(el=>{
@@ -540,7 +540,7 @@ var multiView;
 function multiState(){return multiView??= {apps:LocalFiftyMulti.apps.slice(),scenario:'dinner',shift:LocalFiftyMulti.apps.slice(),goal:LocalFiftyMulti.apps.slice(),hourly:LocalFiftyMulti.apps.slice()};}
 function appChips(apps,scope,label){return `<div class="app-chip-group" role="group" aria-label="${escapeHTML(t(label))}"><span class="app-chip-label">${hourlyCopy(label)}</span>${LocalFiftyMulti.apps.map(k=>`<button type="button" class="app-chip" data-multi-scope="${scope}" data-multi-app="${k}" aria-pressed="${apps.includes(k)}" aria-label="${escapeHTML(LocalFiftyMulti.names([k]))}"><img src="assets/logos/${k}.svg" alt="" width="100" height="28"><span aria-hidden="true">${apps.includes(k)?'✓':'+'}</span></button>`).join('')}</div>`;}
 function bindAppChips(host,callback){host.querySelectorAll('[data-multi-app]').forEach(b=>b.addEventListener('click',()=>{const state=multiState(),scope=b.dataset.multiScope,k=b.dataset.multiApp,apps=state[scope];if(apps.includes(k)){if(apps.length===1)return;state[scope]=apps.filter(a=>a!==k);}else state[scope]=LocalFiftyMulti.apps.filter(a=>apps.includes(a)||a===k);for(const key of ['apps','shift','goal','hourly'])state[key]=state[scope].slice();LocalFiftyMulti.toGoal(state.apps);renderMulti();renderHourly();renderShiftLight();renderGoalJourney();document.querySelector(`[data-multi-scope="${scope}"][data-multi-app="${k}"]`)?.focus({preventScroll:true});}));}
-// Zack requested this plain-language explanation; Claude can migrate it to copy.
+// Comparison layout consumes the data layer’s localized wording.
 function multiOrderComparison(apps,scenario,label){
  const r=LocalFiftyMulti.result(apps,scenario);
  return `<article class="multi-order-card"><h4>${escapeHTML(label)}</h4><div class="comparison-logos">${apps.map(app=>`<img src="assets/logos/${app}.svg" alt="" width="100" height="28">`).join('')}</div><strong>${escapeHTML(money(r.pay_per_order))}</strong><p>${escapeHTML(t('multiCompareUnit'))}</p></article>`;
@@ -659,7 +659,9 @@ function organizeExampleCalculator(){
 
 function renderLanguageSelector(){
  const host=document.querySelector('.languages');let select=host.querySelector('.language-select');
- if(!select){select=document.createElement('select');select.className='language-select';select.innerHTML='<option value="en">English</option><option value="es">Español</option><option value="pt">Português</option>';select.addEventListener('change',()=>setLanguage(select.value));host.append(select);}
+ if(!select){select=document.createElement('select');select.className='language-select';select.innerHTML='<option value="en">English</option><option value="es">Español</option><option value="pt">Português</option>';host.append(select);}
+ // A prerendered select already exists but has no live event handlers.
+ select.onchange=()=>setLanguage(select.value);
  select.value=language;select.setAttribute('aria-label',t('langLabel'));
 }
 renderLanguageSelector();

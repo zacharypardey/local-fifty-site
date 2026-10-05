@@ -72,7 +72,7 @@ Object.assign(copy, {
     "¿Cuánto tardaré en alcanzar mi meta de ahorro?",
     "Quanto tempo para alcançar minha meta de economia?"
   ],
-  "presentation8": [
+  "walthamRequirementsSummary": [
     "In Waltham: 18+ for DoorDash and Grubhub. Uber Eats: 19+ by car, 18+ by bike.",
     "En Waltham: 18+ para DoorDash y Grubhub. Uber Eats: 19+ en auto, 18+ en bicicleta.",
     "Em Waltham: 18+ para DoorDash e Grubhub. Uber Eats: 19+ de carro, 18+ de bicicleta."

@@ -614,3 +614,36 @@ section[id]{scroll-margin-top:var(--section-header-offset,140px)}
 .map-explorer .zone-label strong{line-height:1.35}
 .map-explorer .zone-label small{margin:0;line-height:1.45}
 @media(max-width:650px){.map-explorer .zone-label{padding:12px 14px;gap:12px;min-height:68px}}
+
+/* On phones, each amount and its disclosure are one card. Operators belong
+   to the amount they modify, not to the space between disclosures. */
+@media(max-width:650px){
+ .money-flow{gap:12px}
+ .money-flow>.math-sign{display:none!important}
+ .money-flow>.money-item,.money-flow>.money-item.kept{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,8rem),1fr));gap:8px 12px;padding:16px;margin:0;width:100%;border:1px solid var(--ui-border);border-radius:var(--ui-tile-radius);background:var(--ui-surface)}
+ .money-flow>.money-item.kept{background:var(--ui-selected);border-color:var(--ui-field-border)}
+ .money-flow>.money-item>span{grid-column:auto;grid-row:auto;order:0;margin:0;min-height:0;align-self:center}
+ .money-flow>.money-item>strong{grid-column:auto;grid-row:auto;order:1;font-size:clamp(1.5rem,8vw,2.35rem);text-align:right;white-space:nowrap}
+ .money-flow>.money-item:nth-child(3)>strong::before,
+ .money-flow>.money-item:nth-child(5)>strong::before{content:'−'!important;font-family:var(--body);font-size:.8em;font-weight:600;margin-right:.15em}
+ .money-flow>.money-item.kept>strong::before{content:'='!important;font-family:var(--body);font-size:.65em;font-weight:600;margin-right:.2em}
+ .money-flow>.money-item>.expense-why{grid-column:1/-1;grid-row:auto;order:2;margin-top:4px;border-top:1px solid var(--ui-border);padding-top:0}
+ .money-flow>.money-item>.expense-why>summary{padding-block:12px;min-height:44px}
+}
+
+/* iOS Safari centers native time values unless its internal value box is
+   explicitly aligned. Keep the picker and the adjacent steppers usable. */
+.shift-control .time-input-row input[type=time]{-webkit-appearance:none;appearance:none;text-align:left;min-width:0;max-width:100%;flex:1 1 0}
+.shift-control .time-input-row input[type=time]::-webkit-date-and-time-value{text-align:left;margin:0;min-height:1.2em}
+.shift-control .time-input-row input[type=time]::-webkit-datetime-edit{display:inline-flex;align-items:center;padding:0;text-align:left}
+.shift-control .time-input-row input[type=time]::-webkit-datetime-edit-fields-wrapper{padding:0;text-align:left}
+.shift-control .time-input-row input[type=time]::-webkit-calendar-picker-indicator{margin-left:auto;flex-shrink:0}
+
+/* App comparison rows share one value column on phones. Icon indentation
+   belongs to labels only; it must not shift the wait/delivery values. */
+@media(max-width:650px){
+ .app-card .app-stat:not(.restaurant-stat):not([hidden]){display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,8rem),1fr));gap:8px 16px;align-items:center}
+ .app-card .app-stat:not(.restaurant-stat):not([hidden])>dt{min-height:0;margin:0;line-height:1.5}
+ .app-card .app-stat:not(.restaurant-stat):not([hidden])>dd{padding:0;margin:0;text-align:left;justify-self:stretch;min-width:0;line-height:1.5}
+ .app-card .app-stat[data-model-stat] dd{font-size:1.02rem}
+}
