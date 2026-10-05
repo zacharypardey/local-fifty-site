@@ -178,3 +178,8 @@ Object.assign(copy, {
     "Cadastro em Waltham com bicicleta ou scooter: não confirmado. Carros e motos são aceitos em todas as áreas."
   ]
 });
+
+Object.assign(copy, {
+ navScrollBack: ['Show earlier sections', 'Ver secciones anteriores', 'Ver seções anteriores'],
+ navScrollForward: ['Show more sections', 'Ver más secciones', 'Ver mais seções']
+});

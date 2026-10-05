@@ -678,3 +678,23 @@ function renderDurationStepper(){
  row.querySelectorAll('button').forEach(button=>{const minus=button.dataset.durationStep==='-1';button.disabled=minus?value<=1:value>=24;button.setAttribute('aria-label',t(minus?'durationLess':'durationMore'));});
 }
 
+
+// Keep scroll affordances outside the moving links; hydrate prerendered buttons.
+function setupNavScroll(){
+ const nav=document.querySelector('.masthead .section-nav'),track=nav?.querySelector('.wrap');if(!track)return;
+ for(const [direction,symbol] of [['back','‹'],['forward','›']]){
+  let button=nav.querySelector('[data-nav-scroll="'+direction+'"]');
+  if(!button){button=document.createElement('button');button.type='button';button.className='nav-scroll';button.dataset.navScroll=direction;button.textContent=symbol;nav.append(button);}
+  button.onclick=()=>track.scrollBy({left:(direction==='back'?-1:1)*track.clientWidth*.75,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+ }
+ const update=()=>{
+  const max=track.scrollWidth-track.clientWidth,overflow=max>2;nav.classList.toggle('nav-overflow',overflow);
+  const back=nav.querySelector('[data-nav-scroll=back]'),forward=nav.querySelector('[data-nav-scroll=forward]');
+  back.disabled=track.scrollLeft<=2;forward.disabled=track.scrollLeft>=max-2;
+  back.setAttribute('aria-label',t('navScrollBack'));forward.setAttribute('aria-label',t('navScrollForward'));
+  nav.classList.toggle('nav-more-left',overflow&&!back.disabled);nav.classList.toggle('nav-more-right',overflow&&!forward.disabled);
+ };
+ track.addEventListener('scroll',update,{passive:true});new ResizeObserver(update).observe(track);
+ new MutationObserver(update).observe(track,{childList:true,subtree:true});update();
+}
+setupNavScroll();
