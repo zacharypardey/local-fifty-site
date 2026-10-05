@@ -1,0 +1,192 @@
+{
+ "listings": {
+  "title": "DoorDash, Uber Eats, and Grubhub store listings for Waltham, MA",
+  "publisher": "Local Fifty count of each app\u2019s public store pages",
+  "as_of": "2026-10-03",
+  "url": null
+ },
+ "google_hours": {
+  "title": "Google Places business hours for Waltham restaurants",
+  "publisher": "Google Places API",
+  "as_of": "2026-10-03",
+  "url": null
+ },
+ "gridwise_2025": {
+  "title": "Gridwise driver earnings data, 2025 (DoorDash, Uber Eats, Grubhub)",
+  "publisher": "Gridwise",
+  "as_of": "2025-12-31",
+  "url": "https://gridwise.io/blog/how-much-do-uber-eats-drivers-make",
+  "note": "National medians from app-connected drivers. Not Waltham. Per ACTIVE hour: the clock runs only while on a trip, so waiting between orders is not counted."
+ },
+ "solo_metro": {
+  "title": "Solo pay insights: DoorDash, Uber Eats, and Grubhub in Boston, MA",
+  "publisher": "Solo (driver earnings app)",
+  "as_of": "2026-09-30",
+  "url": "https://www.worksolo.com/pay-insights/doordash-boston-ma",
+  "urls": {
+   "doordash": "https://www.worksolo.com/pay-insights/doordash-boston-ma",
+   "ubereats": "https://www.worksolo.com/pay-insights/ubereats-boston-ma",
+   "grubhub": "https://www.worksolo.com/pay-insights/grubhub-boston-ma"
+  },
+  "note": "Average of base pay, bonus pay, and tips tracked in the Solo app. Solo does not say whether its hours include waiting, and does not publish a sample size. Boston, not Waltham."
+ },
+ "driver_reports": {
+  "title": "Boston-area drivers\u2019 own pay reports (Reddit)",
+  "publisher": "Collected by Local Fifty",
+  "as_of": "2026-10-04",
+  "url": null,
+  "note": "Self-reported, not audited. See driver_reports in pay.json for each post."
+ },
+ "aaa_gas": {
+  "title": "AAA Massachusetts average, regular gasoline",
+  "publisher": "AAA",
+  "as_of": "2026-10-02",
+  "url": "https://gasprices.aaa.com/state-gas-price-averages/"
+ },
+ "irs_mileage": {
+  "title": "IRS standard mileage rate for 2026: 72.5 cents per mile",
+  "publisher": "IRS",
+  "as_of": "2026-01-01",
+  "url": "https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents"
+ },
+ "irs_se_tax": {
+  "title": "Self-employment tax rate 15.3%",
+  "publisher": "IRS",
+  "as_of": "2026-01-01",
+  "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+ },
+ "state_rideshare_min": {
+  "title": "Uber and Lyft settlement: $34.48 per hour minimum for rides with passengers, from Jan 15, 2026",
+  "publisher": "Massachusetts Attorney General",
+  "as_of": "2026-01-15",
+  "url": "https://www.mass.gov/info-details/uber-and-lyft-settlement-information-and-frequently-asked-questions"
+ },
+ "uber_requirements": {
+  "title": "Uber Eats delivery requirements",
+  "publisher": "Uber",
+  "as_of": "2026-10-03",
+  "url": "https://www.uber.com/us/en/deliver/"
+ },
+ "grubhub_requirements": {
+  "title": "Grubhub delivery partner requirements",
+  "publisher": "Grubhub",
+  "as_of": "2026-10-04",
+  "url": "https://driver.grubhub.com/"
+ },
+ "doordash_requirements": {
+  "title": "DoorDash Dasher requirements",
+  "publisher": "DoorDash",
+  "as_of": "2026-10-04",
+  "url": "https://dasher.doordash.com/en-us",
+  "note": "Age 18, or 19 or 21 in some states. The page does not list which states."
+ },
+ "local_fifty_model": {
+  "title": "Local Fifty earnings estimate for Waltham (model v0.6)",
+  "publisher": "Local Fifty",
+  "as_of": "2026-10-05",
+  "url": null,
+  "note": "Fit to Solo pay data for 85 metros (218 city x app figures), waiting anchored on NYC official data and Boston-area drivers' logs, adjusted for Waltham's trip lengths, speeds, income, and nearby metros. Held-out metros predicted within 6.9% on average."
+ },
+ "aaa_ydc": {
+  "title": "AAA Your Driving Costs 2025",
+  "publisher": "AAA",
+  "as_of": "2025-09-01",
+  "url": "https://newsroom.aaa.com/wp-content/uploads/2025/09/UPDATE-AAA-Fact-Sheet-Your-Driving-Cost-9.2025-1.pdf"
+ },
+ "dd_ica": {
+  "title": "DoorDash Independent Contractor Agreement (US)",
+  "publisher": "DoorDash",
+  "as_of": "2026-07-17",
+  "url": "https://help.doordash.com/en-us/legal/article/dx-ica"
+ },
+ "dd_deactivation": {
+  "title": "DoorDash Deactivation Policy",
+  "publisher": "DoorDash",
+  "as_of": "2026-10-05",
+  "url": "https://help.doordash.com/en-us/legal/article/dx-deactivation-policy"
+ },
+ "dd_pause": {
+  "title": "How do I pause a Dash?",
+  "publisher": "DoorDash",
+  "as_of": "2026-10-05",
+  "url": "https://help.doordash.com/en-us/dashers/article/how-do-i-pause-a-dash"
+ },
+ "dd_ebt": {
+  "title": "Earn by Time",
+  "publisher": "DoorDash",
+  "as_of": "2026-10-05",
+  "url": "https://help.doordash.com/en-us/dashers/article/time-earnings-mode"
+ },
+ "dd_rewards_nyc": {
+  "title": "Dasher Rewards (NYC requirements)",
+  "publisher": "DoorDash",
+  "as_of": "2026-10-05",
+  "url": "https://help.doordash.com/en-us/dashers/article/dasher-rewards-program-nyc"
+ },
+ "uber_paa_delivery": {
+  "title": "Platform Access Agreement (US delivery)",
+  "publisher": "Uber",
+  "as_of": "2022-01-01",
+  "url": "https://tb-static.uber.com/prod/reddog/country/UnitedStates/p2p/4f188540-6f79-4912-80a3-95e3d3ee7f5b.pdf"
+ },
+ "uber_blog_multi": {
+  "title": "Best delivery app to work with in 2026",
+  "publisher": "Uber",
+  "as_of": "2026-07-31",
+  "url": "https://www.uber.com/us/en/blog/best-delivery-app-to-work-with/"
+ },
+ "uber_offline": {
+  "title": "Need a break?",
+  "publisher": "Uber",
+  "as_of": "2026-10-05",
+  "url": "https://help.uber.com/en/driving-and-delivering/article/need-a-break?nodeId=986cadef-2cc9-4587-b85e-53661eddaa4a"
+ },
+ "uber_pro": {
+  "title": "Uber Eats Pro",
+  "publisher": "Uber",
+  "as_of": "2026-10-05",
+  "url": "https://help.uber.com/en/driving-and-delivering/article/uber-eats-pro-courier-loyalty-program?nodeId=10942862-0fec-48ce-a45b-dfd7e4c53661"
+ },
+ "gh_multi": {
+  "title": "Best Practices for Working on Multiple Delivery Platforms",
+  "publisher": "Grubhub",
+  "as_of": "2026-09-29",
+  "url": "https://driver-support.grubhub.com/hc/en-us/articles/5766277988244-Best-Practices-for-Working-on-Multiple-Delivery-Platforms"
+ },
+ "gh_pause": {
+  "title": "Can I take a pause while toggled available?",
+  "publisher": "Grubhub",
+  "as_of": "2026-09-05",
+  "url": "https://driver-support.grubhub.com/hc/en-us/articles/4408220105492"
+ },
+ "gh_schedule_restriction": {
+  "title": "What is Schedule Restriction?",
+  "publisher": "Grubhub",
+  "as_of": "2026-09-25",
+  "url": "https://driver-support.grubhub.com/hc/en-us/articles/7043860657300"
+ },
+ "gh_levels": {
+  "title": "Driver levels",
+  "publisher": "Grubhub",
+  "as_of": "2026-09-25",
+  "url": "https://driver-support.grubhub.com/hc/en-us/articles/8981410329620"
+ },
+ "ma_handsfree": {
+  "title": "Hands-free law",
+  "publisher": "Massachusetts State Police (mass.gov)",
+  "as_of": "2026-10-05",
+  "url": "https://www.mass.gov/info-details/hands-free-law"
+ },
+ "ma_handsfree_statute": {
+  "title": "M.G.L. c.90 \u00a713B",
+  "publisher": "Massachusetts Legislature",
+  "as_of": "2020-02-23",
+  "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIV/Chapter90/Section13B"
+ },
+ "nyc_dcwp_2022": {
+  "title": "A Minimum Pay Rate for App-Based Restaurant Delivery Workers in NYC",
+  "publisher": "NYC Department of Consumer and Worker Protection",
+  "as_of": "2022-11-01",
+  "url": "https://www.nyc.gov/assets/dca/downloads/pdf/workers/Delivery-Worker-Study-November-2022.pdf"
+ }
+}

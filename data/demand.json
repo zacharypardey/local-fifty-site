@@ -1,0 +1,358 @@
+{
+ "what_it_would_count": "Orders available to drivers per hour. No public source. Needs Waltham shift logs.",
+ "evidence": "unknown",
+ "n": 0,
+ "cells": {
+  "Mon": [
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 6
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 31
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 100
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 106
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 105
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 103
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 61
+   }
+  ],
+  "Tue": [
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 31
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 101
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 108
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 111
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 109
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 66
+   }
+  ],
+  "Wed": [
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 10
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 31
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 105
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 112
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 116
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 114
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 67
+   }
+  ],
+  "Thu": [
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 10
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 31
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 106
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 114
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 117
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 116
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 71
+   }
+  ],
+  "Fri": [
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 11
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 31
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 106
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 114
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 116
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 115
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 81
+   }
+  ],
+  "Sat": [
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 11
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 30
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 104
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 112
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 114
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 112
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 82
+   }
+  ],
+  "Sun": [
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 12
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 9
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 26
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 86
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 104
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 102
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 99
+   },
+   {
+    "score": null,
+    "evidence": "unknown",
+    "n": 0,
+    "open_restaurants": 55
+   }
+  ]
+ },
+ "proxy": "availability.json (open restaurants) is shown instead, labeled as such"
+}

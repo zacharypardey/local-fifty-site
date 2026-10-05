@@ -1,0 +1,52 @@
+{
+ "town": "Waltham",
+ "state": "MA",
+ "state_name": "Massachusetts",
+ "slug": "ma-waltham",
+ "metro": "Boston",
+ "last_updated": "2026-10-03",
+ "map_source": {
+  "en": "the City of Waltham GIS map",
+  "es": "el mapa GIS de la ciudad de Waltham",
+  "year": 2015,
+  "pt_in": "no mapa GIS da cidade de Waltham",
+  "pt": "o mapa GIS da cidade de Waltham"
+ },
+ "map_source_link": "https://walthamtourism.com/wp-content/uploads/2016/01/20150611-For-Print-Use-TROLLEY-MAP.pdf",
+ "river_label": {
+  "en": "Charles River",
+  "es": "R\u00edo Charles",
+  "pt": "Rio Charles"
+ },
+ "hero_art_caption": "MOODY STREET \u00b7 WALTHAM, MASSACHUSETTS",
+ "evidence_states": [
+  "verified",
+  "reported",
+  "estimate",
+  "illustrative",
+  "unknown"
+ ],
+ "method": "Restaurant counts: every Waltham storefront on each app, matched to Google Places. Hours: Google Places. Pay: Solo app Boston averages, Sept 2026, plus Boston-area drivers\u2019 own reports; Gridwise 2025 national medians for miles and deliveries per hour. Gas: AAA Massachusetts. No Waltham shift logs yet.",
+ "what_is_measured": [
+  "restaurants per app",
+  "restaurants open by hour",
+  "pickup areas",
+  "busiest pickups by app ratings"
+ ],
+ "what_is_reported": [
+  "pay per hour worked, from Boston-area drivers"
+ ],
+ "what_is_estimated": [
+  "pay per hour",
+  "pay per delivery",
+  "gas per hour",
+  "tax set-aside",
+  "example evening"
+ ],
+ "what_is_unknown": [
+  "delivery demand by hour",
+  "measured Waltham earnings",
+  "sign-up offer amounts",
+  "wait times"
+ ]
+}

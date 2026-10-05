@@ -1,0 +1,635 @@
+{
+ "featured_app": "doordash",
+ "featured_reason": "most restaurants in town",
+ "headline_scenario": "dinner",
+ "hour_basis": {
+  "value": "logged_in",
+  "evidence": "estimate",
+  "source_id": "local_fifty_model",
+  "note": "Every pay figure is per hour logged in, waiting between orders included. Pay per hour on a delivery alone is in engaged_pay_per_hour."
+ },
+ "model": {
+  "version": "0.6",
+  "as_of": "2026-10-05",
+  "n_metros": 85,
+  "n_obs": 218,
+  "validation_mae_pct": 6.9,
+  "posterior": {
+   "mu": [
+    0.36407206468183195,
+    0.4176855720894876,
+    0.470873012838058
+   ],
+   "eta": [
+    -0.04983691983625833,
+    0.02333692121498522,
+    0.09267113997534973
+   ],
+   "psi": [
+    6.084832882331971,
+    7.171506569264661,
+    8.252222102583955
+   ],
+   "alpha": [
+    0.19315001713076735,
+    0.5362320322052794,
+    0.848465132296506
+   ],
+   "u_star": [
+    0.5536869007427923,
+    0.6044397382828073,
+    0.6604549589990983
+   ],
+   "omega": [
+    0.0011579390755203079,
+    0.0073362352940015375,
+    0.020518964295501263
+   ],
+   "kappa": [
+    0.36170444398448165,
+    0.43970966218266805,
+    0.5104489456534943
+   ]
+  },
+  "anchors_note": "Waiting anchored on platform-wide studies (NYC 2021 and 2022-23, Seattle 2026, DoorDash 2023, Gridwise 2026, UC Berkeley 2022) and 20 Boston-area shift logs; other apps scaled from DoorDash by local orders per driver (three versions: local market shares, national shares x Waltham coverage, Waltham ratings)."
+ },
+ "driver_reports": {
+  "evidence": "reported",
+  "source_id": "driver_reports",
+  "app": "doordash",
+  "place": "Boston area",
+  "hour_basis": "logged_in",
+  "costs_subtracted": false,
+  "n": 3,
+  "low": 8.07,
+  "high": 12.92,
+  "median": 11.67,
+  "dates": [
+   "2024-03-26",
+   "2025-02-05",
+   "2025-05-09"
+  ],
+  "reports": [
+   {
+    "id": "r01",
+    "date": "2024-03-26",
+    "pay_per_hour": 11.67,
+    "url": "https://www.reddit.com/r/doordash_drivers/comments/1bopz0n/is_anyone_in_boston_ma_making_money/"
+   },
+   {
+    "id": "r04",
+    "date": "2025-02-05",
+    "pay_per_hour": 12.92,
+    "url": "https://www.reddit.com/r/doordash/comments/1iiciba/comment/mb5alrx/"
+   },
+   {
+    "id": "r07",
+    "date": "2025-05-09",
+    "pay_per_hour": 8.07,
+    "url": "https://www.reddit.com/r/doordash_drivers/comments/1ki9lvx/tonight_was_my_first_night_of_dashing_and_in_35/"
+   }
+  ],
+  "rule": "DoorDash, Boston area, pay per logged-in hour including waits, before costs; holiday shifts excluded"
+ },
+ "active_share_of_shift": {
+  "value": 0.8,
+  "evidence": "estimate",
+  "source_id": "local_fifty_model",
+  "as_of": "2026-10-05",
+  "unit": "share",
+  "note": "share of logged-in time on deliveries; not yet measured in Waltham"
+ },
+ "hero_range": {
+  "low": {
+   "value": 9.77,
+   "evidence": "estimate",
+   "source_id": "local_fifty_model",
+   "as_of": "2026-10-05",
+   "unit": "USD/hour",
+   "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+   "low": 6.46,
+   "high": 13.19
+  },
+  "high": {
+   "value": 14.6,
+   "evidence": "estimate",
+   "source_id": "local_fifty_model",
+   "as_of": "2026-10-05",
+   "unit": "USD/hour",
+   "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+   "low": 12.46,
+   "high": 17.13
+  },
+  "label": "Boston, before car costs"
+ },
+ "per_hour": {
+  "doordash": {
+   "pay_per_hour": {
+    "value": 14.6,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+    "low": 12.46,
+    "high": 17.13
+   },
+   "national_pay_per_hour": {
+    "value": 11.26,
+    "evidence": "estimate",
+    "source_id": "gridwise_2025",
+    "as_of": "2025-12-31",
+    "unit": "USD/hour",
+    "note": "national median per active hour (time on a trip only), for reference"
+   },
+   "gas_per_hour": {
+    "value": 2.95,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "18.92 miles per logged-in hour, 28.0 mpg, gas $4.36"
+   },
+   "tax_set_aside_per_hour": {
+    "value": 0.26,
+    "evidence": "estimate",
+    "source_id": "irs_se_tax",
+    "as_of": "2026-01-01",
+    "unit": "USD/hour",
+    "note": "30% of (pay - 72.5 cents x 18.92 miles): self-employment + federal 12% + MA 5%, after the mileage deduction"
+   },
+   "keep_per_hour": {
+    "value": 11.39,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "pay - gas - tax set-aside; before repairs and insurance",
+    "low": 9.51,
+    "high": 13.16
+   },
+   "deliveries_per_hour": {
+    "value": 1.82,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "deliveries/hour"
+   },
+   "pay_per_delivery": {
+    "value": 8.07,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/delivery"
+   },
+   "tips_share": {
+    "value": 0.46,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "share"
+   },
+   "all_hours": {
+    "pay_per_hour": 12.2,
+    "low": 10.42,
+    "high": 14.34,
+    "gas_per_hour": 2.47,
+    "tax_per_hour": 0.22,
+    "keep_per_hour": 9.51,
+    "share_of_time_on_deliveries": 0.67,
+    "note": "average across all hours, all drivers (shift logs: new drivers and slow nights earn less)",
+    "miles_per_hour": 15.8,
+    "wait_between_orders_minutes": 13.2,
+    "wait_low": 9.5,
+    "wait_high": 17.3,
+    "deliveries_per_hour": 1.52
+   },
+   "engaged_pay_per_hour": {
+    "value": 18.29,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "per hour on a delivery only (accept to drop-off)"
+   },
+   "repairs_per_hour": {
+    "value": 2.09,
+    "evidence": "estimate",
+    "source_id": "aaa_ydc",
+    "as_of": "2025-09-01",
+    "unit": "USD/hour",
+    "note": "maintenance, repairs, tires: AAA 11.04 cents a mile"
+   },
+   "taxable_per_hour": 0.88,
+   "minutes_per_delivery": {
+    "value": 26.33,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "minutes"
+   },
+   "share_of_time_on_deliveries": {
+    "value": 0.8,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "share"
+   },
+   "miles_per_hour": {
+    "value": 18.92,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "miles/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, including the drive between orders"
+   },
+   "wait_between_orders_minutes": {
+    "value": 6.6,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "minutes",
+    "note": "Friday/Saturday dinner shift, average wait from one drop-off to the next order; 80% range low-high",
+    "low": 3.2,
+    "high": 10.4
+   }
+  },
+  "ubereats": {
+   "pay_per_hour": {
+    "value": 9.77,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+    "low": 6.46,
+    "high": 13.19
+   },
+   "national_pay_per_hour": {
+    "value": 14.07,
+    "evidence": "estimate",
+    "source_id": "gridwise_2025",
+    "as_of": "2025-12-31",
+    "unit": "USD/hour",
+    "note": "national median per active hour (time on a trip only), for reference"
+   },
+   "gas_per_hour": {
+    "value": 2.28,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "14.63 miles per logged-in hour, 28.0 mpg, gas $4.36"
+   },
+   "tax_set_aside_per_hour": {
+    "value": 0.0,
+    "evidence": "estimate",
+    "source_id": "irs_se_tax",
+    "as_of": "2026-01-01",
+    "unit": "USD/hour",
+    "note": "30% of (pay - 72.5 cents x 14.63 miles): self-employment + federal 12% + MA 5%, after the mileage deduction"
+   },
+   "keep_per_hour": {
+    "value": 7.49,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "pay - gas - tax set-aside; before repairs and insurance",
+    "low": 4.18,
+    "high": 10.14
+   },
+   "deliveries_per_hour": {
+    "value": 1.28,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "deliveries/hour"
+   },
+   "pay_per_delivery": {
+    "value": 7.72,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/delivery"
+   },
+   "tips_share": {
+    "value": 0.51,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "share"
+   },
+   "all_hours": {
+    "pay_per_hour": 8.15,
+    "low": 5.4,
+    "high": 11.04,
+    "gas_per_hour": 1.9,
+    "tax_per_hour": 0.0,
+    "keep_per_hour": 6.25,
+    "share_of_time_on_deliveries": 0.52,
+    "note": "average across all hours, all drivers (shift logs: new drivers and slow nights earn less)",
+    "miles_per_hour": 12.2,
+    "wait_between_orders_minutes": 27.0,
+    "wait_low": 14.5,
+    "wait_high": 55.0,
+    "deliveries_per_hour": 1.07
+   },
+   "engaged_pay_per_hour": {
+    "value": 15.88,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "per hour on a delivery only (accept to drop-off)"
+   },
+   "repairs_per_hour": {
+    "value": 1.62,
+    "evidence": "estimate",
+    "source_id": "aaa_ydc",
+    "as_of": "2025-09-01",
+    "unit": "USD/hour",
+    "note": "maintenance, repairs, tires: AAA 11.04 cents a mile"
+   },
+   "taxable_per_hour": 0.0,
+   "minutes_per_delivery": {
+    "value": 29.22,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "minutes"
+   },
+   "share_of_time_on_deliveries": {
+    "value": 0.62,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "share"
+   },
+   "miles_per_hour": {
+    "value": 14.63,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "miles/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, including the drive between orders"
+   },
+   "wait_between_orders_minutes": {
+    "value": 17.8,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "minutes",
+    "note": "Friday/Saturday dinner shift, average wait from one drop-off to the next order; 80% range low-high",
+    "low": 7.0,
+    "high": 41.1
+   }
+  },
+  "grubhub": {
+   "pay_per_hour": {
+    "value": 12.23,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+    "low": 9.31,
+    "high": 16.02
+   },
+   "national_pay_per_hour": {
+    "value": 15.38,
+    "evidence": "estimate",
+    "source_id": "gridwise_2025",
+    "as_of": "2025-12-31",
+    "unit": "USD/hour",
+    "note": "national median per active hour (time on a trip only), for reference"
+   },
+   "gas_per_hour": {
+    "value": 2.01,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "12.89 miles per logged-in hour, 28.0 mpg, gas $4.36"
+   },
+   "tax_set_aside_per_hour": {
+    "value": 0.87,
+    "evidence": "estimate",
+    "source_id": "irs_se_tax",
+    "as_of": "2026-01-01",
+    "unit": "USD/hour",
+    "note": "30% of (pay - 72.5 cents x 12.89 miles): self-employment + federal 12% + MA 5%, after the mileage deduction"
+   },
+   "keep_per_hour": {
+    "value": 9.35,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "pay - gas - tax set-aside; before repairs and insurance",
+    "low": 7.3,
+    "high": 12.01
+   },
+   "deliveries_per_hour": {
+    "value": 1.31,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "deliveries/hour"
+   },
+   "pay_per_delivery": {
+    "value": 8.71,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/delivery"
+   },
+   "tips_share": {
+    "value": 0.56,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "share"
+   },
+   "all_hours": {
+    "pay_per_hour": 10.23,
+    "low": 7.77,
+    "high": 13.29,
+    "gas_per_hour": 1.68,
+    "tax_per_hour": 0.73,
+    "keep_per_hour": 7.82,
+    "share_of_time_on_deliveries": 0.45,
+    "note": "average across all hours, all drivers (shift logs: new drivers and slow nights earn less)",
+    "miles_per_hour": 10.8,
+    "wait_between_orders_minutes": 30.2,
+    "wait_low": 18.7,
+    "wait_high": 45.2,
+    "deliveries_per_hour": 1.09
+   },
+   "engaged_pay_per_hour": {
+    "value": 22.65,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "per hour on a delivery only (accept to drop-off)"
+   },
+   "repairs_per_hour": {
+    "value": 1.42,
+    "evidence": "estimate",
+    "source_id": "aaa_ydc",
+    "as_of": "2025-09-01",
+    "unit": "USD/hour",
+    "note": "maintenance, repairs, tires: AAA 11.04 cents a mile"
+   },
+   "taxable_per_hour": 2.88,
+   "minutes_per_delivery": {
+    "value": 24.84,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "minutes"
+   },
+   "share_of_time_on_deliveries": {
+    "value": 0.54,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "share"
+   },
+   "miles_per_hour": {
+    "value": 12.89,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "miles/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, including the drive between orders"
+   },
+   "wait_between_orders_minutes": {
+    "value": 21.1,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "minutes",
+    "note": "Friday/Saturday dinner shift, average wait from one drop-off to the next order; 80% range low-high",
+    "low": 11.3,
+    "high": 33.9
+   }
+  }
+ },
+ "calculator_defaults": {
+  "pay": 16.99,
+  "car_costs": 2.74,
+  "tax_rate": 8.9,
+  "hours": 4,
+  "evidence": "estimate",
+  "tax_rate_on_taxable": 30,
+  "miles_per_hour": 17.59,
+  "mileage_rate": 0.725,
+  "note": "car_costs is gas only. All-in car costs by the IRS rate are much higher; see all_in_car_cost_per_hour.",
+  "apps": [
+   "doordash",
+   "ubereats",
+   "grubhub"
+  ]
+ },
+ "all_in_car_cost_per_hour": {
+  "value": 12.75,
+  "evidence": "estimate",
+  "source_id": "irs_mileage",
+  "as_of": "2026-01-01",
+  "unit": "USD/hour",
+  "note": "17.59 miles an hour (all three apps, weekend dinner) at 72.5 cents a mile. Covers gas, wear, repairs, insurance share. Deductible if you track miles."
+ },
+ "assumptions": {
+  "miles_per_active_hour": {
+   "value": 14,
+   "evidence": "estimate",
+   "source_id": "gridwise_2025",
+   "as_of": "2025-12-31",
+   "unit": "miles/hour",
+   "note": "pay per hour / pay per mile: DoorDash 12.43/0.92 = 13.5; Uber Eats 18.06/1.27 = 14.2. National reference only: the page uses per_hour[app].miles_per_hour (model)."
+  },
+  "mpg": {
+   "value": 28,
+   "evidence": "illustrative",
+   "source_id": null,
+   "as_of": "2026-10-03",
+   "unit": "mpg",
+   "note": "typical used sedan"
+  },
+  "gas_price": {
+   "value": 4.36,
+   "evidence": "estimate",
+   "source_id": "aaa_gas",
+   "as_of": "2026-10-02",
+   "unit": "USD/gallon"
+  },
+  "tax_rate_range": {
+   "low": 25,
+   "high": 30,
+   "evidence": "estimate",
+   "source_id": "irs_se_tax",
+   "note": "15.3% self-employment tax plus federal 10-12% and Massachusetts 5% income tax, on pay minus 72.5 cents a mile (the model uses 30%)"
+  }
+ },
+ "example_evening": {
+  "evidence": "illustrative",
+  "hours": 4,
+  "apps": [
+   "doordash",
+   "ubereats",
+   "grubhub"
+  ],
+  "day": "Sat",
+  "start": "17:00",
+  "deliveries": 7,
+  "additional_deliveries": 6,
+  "app": "doordash",
+  "gross": 67.6,
+  "gas": 11.29,
+  "after_gas": 56.31,
+  "kept": 51.81,
+  "miles": 72.5,
+  "tax_set_aside_low": 3.75,
+  "tax_set_aside_high": 5.25,
+  "note": "4 logged-in hours from 5 pm on a Saturday with all three apps; same steps as the shift planner."
+ },
+ "measured_waltham_earnings": {
+  "value": null,
+  "evidence": "unknown",
+  "note": "No Waltham shift logs collected yet. Everything above is an estimate from national data."
+ },
+ "state_rideshare_minimum": {
+  "value": 34.48,
+  "evidence": "verified",
+  "source_id": "state_rideshare_min",
+  "as_of": "2026-01-15",
+  "unit": "USD/hour",
+  "note": "Uber and Lyft rides with passengers only. Does not apply to food delivery."
+ },
+ "headline": {
+  "apps": [
+   "doordash",
+   "ubereats",
+   "grubhub"
+  ],
+  "scenario": "dinner",
+  "evidence": "estimate",
+  "pay": 16.99,
+  "miles": 17.59,
+  "gas": 2.74,
+  "tax": 1.27,
+  "kept": 12.98,
+  "low": 11.52,
+  "high": 14.82,
+  "deliveries": 1.69,
+  "wait": 8.22,
+  "pay_per_order": 10.06,
+  "mileage_rate": 0.725,
+  "tax_rate_on_taxable": 30,
+  "mpg": 28.0,
+  "gas_price": 4.36,
+  "note": "Zack 2026-10-05: the page leads with all three apps at once, Friday/Saturday 5-9 pm, per hour logged in, waiting included. kept = pay - gas - 30% x max(0, pay - 72.5 cents x miles). App cards still show each app alone."
+ }
+}

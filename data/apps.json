@@ -1,0 +1,241 @@
+{
+ "apps": {
+  "doordash": {
+   "name": "DoorDash",
+   "signup_url": "https://dasher.doordash.com/en-us",
+   "restaurants_in_town": {
+    "value": 134,
+    "evidence": "verified",
+    "source_id": "listings",
+    "as_of": "2026-10-03",
+    "unit": "restaurants",
+    "note": "storefronts with a Waltham address listed on the app"
+   },
+   "busy_restaurants": {
+    "value": 68,
+    "evidence": "verified",
+    "source_id": "listings",
+    "as_of": "2026-10-03",
+    "unit": "restaurants",
+    "note": "500 or more ratings on the app"
+   },
+   "orders_per_hour_in_town": {
+    "value": null,
+    "evidence": "unknown",
+    "note": "Order volume is not public. Restaurant count is the best public proxy."
+   },
+   "pay_per_hour": {
+    "value": 14.6,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+    "low": 12.46,
+    "high": 17.13
+   },
+   "keep_per_hour": {
+    "value": 11.39,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "pay - gas - tax set-aside; before repairs and insurance",
+    "low": 9.51,
+    "high": 13.16
+   },
+   "pay_per_delivery": {
+    "value": 8.07,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/delivery"
+   },
+   "deliveries_per_hour": {
+    "value": 1.82,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "deliveries/hour"
+   },
+   "new_driver_offer": {
+    "value": null,
+    "evidence": "unknown",
+    "note": "Guaranteed-earnings offers for first deliveries change by town and week."
+   },
+   "requirements": {
+    "min_age": 18,
+    "min_age_note": "19 or 21 in some states",
+    "vehicles": "Any car or scooter. Bikes in some cities.",
+    "source_id": "doordash_requirements",
+    "evidence": "verified"
+   }
+  },
+  "ubereats": {
+   "name": "Uber Eats",
+   "signup_url": "https://www.uber.com/us/en/deliver/",
+   "restaurants_in_town": {
+    "value": 52,
+    "evidence": "verified",
+    "source_id": "listings",
+    "as_of": "2026-10-03",
+    "unit": "restaurants",
+    "note": "storefronts with a Waltham address listed on the app"
+   },
+   "busy_restaurants": {
+    "value": 30,
+    "evidence": "verified",
+    "source_id": "listings",
+    "as_of": "2026-10-03",
+    "unit": "restaurants",
+    "note": "500 or more ratings on the app"
+   },
+   "orders_per_hour_in_town": {
+    "value": null,
+    "evidence": "unknown",
+    "note": "Order volume is not public. Restaurant count is the best public proxy."
+   },
+   "pay_per_hour": {
+    "value": 9.77,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+    "low": 6.46,
+    "high": 13.19
+   },
+   "keep_per_hour": {
+    "value": 7.49,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "pay - gas - tax set-aside; before repairs and insurance",
+    "low": 4.18,
+    "high": 10.14
+   },
+   "pay_per_delivery": {
+    "value": 7.72,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/delivery"
+   },
+   "deliveries_per_hour": {
+    "value": 1.28,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "deliveries/hour"
+   },
+   "new_driver_offer": {
+    "value": null,
+    "evidence": "unknown",
+    "note": "Guaranteed-earnings offers for the first 30 days change by town and week."
+   },
+   "requirements": {
+    "min_age": 19,
+    "min_age_bike": 18,
+    "vehicles": "Any 2-door or 4-door car, scooter, or bike. Age 19 for a car or scooter, 18 for a bike.",
+    "source_id": "uber_requirements",
+    "evidence": "verified"
+   }
+  },
+  "grubhub": {
+   "name": "Grubhub",
+   "signup_url": "https://driver.grubhub.com/",
+   "restaurants_in_town": {
+    "value": 50,
+    "evidence": "verified",
+    "source_id": "listings",
+    "as_of": "2026-10-03",
+    "unit": "restaurants",
+    "note": "storefronts with a Waltham address listed on the app"
+   },
+   "busy_restaurants": {
+    "value": 24,
+    "evidence": "verified",
+    "source_id": "listings",
+    "as_of": "2026-10-03",
+    "unit": "restaurants",
+    "note": "500 or more ratings on the app"
+   },
+   "orders_per_hour_in_town": {
+    "value": null,
+    "evidence": "unknown",
+    "note": "Order volume is not public. Restaurant count is the best public proxy."
+   },
+   "pay_per_hour": {
+    "value": 12.23,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "Friday/Saturday dinner shift, per hour logged in, waiting between orders included, tips included, before costs; 80% range low-high",
+    "low": 9.31,
+    "high": 16.02
+   },
+   "keep_per_hour": {
+    "value": 9.35,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/hour",
+    "note": "pay - gas - tax set-aside; before repairs and insurance",
+    "low": 7.3,
+    "high": 12.01
+   },
+   "pay_per_delivery": {
+    "value": 8.71,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "USD/delivery"
+   },
+   "deliveries_per_hour": {
+    "value": 1.31,
+    "evidence": "estimate",
+    "source_id": "local_fifty_model",
+    "as_of": "2026-10-05",
+    "unit": "deliveries/hour"
+   },
+   "new_driver_offer": {
+    "value": null,
+    "evidence": "unknown",
+    "note": "No offer found."
+   },
+   "requirements": {
+    "min_age": 18,
+    "vehicles": "A car, motorcycle, scooter, or bike. Allowed types depend on the town.",
+    "source_id": "grubhub_requirements",
+    "evidence": "verified"
+   }
+  }
+ },
+ "total_restaurants_on_any_app": {
+  "value": 144,
+  "evidence": "verified",
+  "source_id": "listings",
+  "as_of": "2026-10-03",
+  "unit": "restaurants"
+ },
+ "on_all_three": {
+  "value": 22,
+  "evidence": "verified",
+  "source_id": "listings",
+  "as_of": "2026-10-03",
+  "unit": "restaurants"
+ },
+ "suggested_order": [
+  "doordash",
+  "grubhub",
+  "ubereats"
+ ],
+ "suggested_reason": {
+  "doordash": "Most restaurants in Waltham (134). Middle Boston pay per hour.",
+  "grubhub": "Highest Boston pay per hour. 50 restaurants. Some Boston drivers report few Grubhub orders.",
+  "ubereats": "52 restaurants. Lowest Boston pay per hour."
+ },
+ "suggestion_basis": "Restaurant counts are verified for Waltham. Pay ranking is from Boston app averages, not Waltham earnings."
+}

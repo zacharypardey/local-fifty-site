@@ -1,0 +1,62 @@
+{
+ "evidence": "verified",
+ "as_of": "2026-10-04",
+ "common": [
+  {
+   "id": "license",
+   "text": "A valid driver\u2019s license"
+  },
+  {
+   "id": "ssn",
+   "text": "Social Security number for the background check",
+   "source_id": "uber_requirements"
+  },
+  {
+   "id": "insurance",
+   "text": "Car insurance in your name"
+  },
+  {
+   "id": "registration",
+   "text": "Current car registration"
+  },
+  {
+   "id": "phone",
+   "text": "A phone that runs the app"
+  },
+  {
+   "id": "age",
+   "text": "Age 18 or older. Uber Eats asks for 19 to drive a car. DoorDash asks for 19 or 21 in some states.",
+   "source_id": "uber_requirements"
+  }
+ ],
+ "per_app": {
+  "doordash": {
+   "min_age": 18,
+   "min_age_note": "19 or 21 in some states",
+   "vehicles": "Any car or scooter. Bikes in some cities.",
+   "source_id": "doordash_requirements",
+   "evidence": "verified"
+  },
+  "ubereats": {
+   "min_age": 19,
+   "min_age_bike": 18,
+   "vehicles": "Any 2-door or 4-door car, scooter, or bike. Age 19 for a car or scooter, 18 for a bike.",
+   "source_id": "uber_requirements",
+   "evidence": "verified"
+  },
+  "grubhub": {
+   "min_age": 18,
+   "vehicles": "A car, motorcycle, scooter, or bike. Allowed types depend on the town.",
+   "source_id": "grubhub_requirements",
+   "evidence": "verified"
+  }
+ },
+ "state_rideshare_minimum_note": {
+  "value": 34.48,
+  "evidence": "verified",
+  "source_id": "state_rideshare_min",
+  "as_of": "2026-01-15",
+  "unit": "USD/hour",
+  "note": "Uber and Lyft rides with passengers only. Does not apply to food delivery."
+ }
+}

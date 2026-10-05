@@ -1,0 +1,345 @@
+{
+ "evidence": "verified",
+ "source_id": "listings",
+ "as_of": "2026-10-03",
+ "total": 144,
+ "areas": [
+  {
+   "id": 1,
+   "name": "Moody Street",
+   "description": "The biggest pickup area. Street parking, some lots behind the shops.",
+   "label": {
+    "en": "Moody Street",
+    "es": "Moody Street",
+    "pt": "Moody Street"
+   },
+   "short": {
+    "en": "Moody Street",
+    "es": "Moody Street",
+    "pt": "Moody Street"
+   },
+   "restaurants": 43
+  },
+  {
+   "id": 2,
+   "name": "Main Street & the Common",
+   "description": "Downtown along Main Street near the Common and the train station.",
+   "label": {
+    "en": "Main Street & the Common",
+    "es": "Main Street y el Common",
+    "pt": "Main Street e o Common"
+   },
+   "short": {
+    "en": "Main St & Common",
+    "es": "Main St y Common",
+    "pt": "Main St e Common"
+   },
+   "restaurants": 32
+  },
+  {
+   "id": 3,
+   "name": "Route 20 & Lexington Street",
+   "description": "Two strips: Lexington Street up to Trapelo Road, and Main Street west toward Market Place.",
+   "label": {
+    "en": "Route 20 & Lexington Street",
+    "es": "Route 20 y Lexington Street",
+    "pt": "Route 20 e Lexington Street"
+   },
+   "short": {
+    "en": "Route 20 & Lexington",
+    "es": "Route 20 y Lexington",
+    "pt": "Route 20 e Lexington"
+   },
+   "restaurants": 32,
+   "parts": {
+    "Lexington St / Trapelo Rd": 16,
+    "Route 20 west / Market Place": 16
+   }
+  }
+ ],
+ "other_areas": [
+  {
+   "name": "Winter Street / Route 128",
+   "restaurants": 15
+  },
+  {
+   "name": "River Street / East Waltham",
+   "restaurants": 6
+  },
+  {
+   "name": "Elsewhere in Waltham",
+   "restaurants": 16
+  }
+ ],
+ "busiest_pickups": [
+  {
+   "name": "McDonald's",
+   "street": "789 Main St",
+   "app_ratings_total": 18445,
+   "apps": [
+    "doordash",
+    "ubereats",
+    "grubhub"
+   ],
+   "evidence": "verified",
+   "note": "ranked by total ratings across the apps, a proxy for order volume"
+  },
+  {
+   "name": "Five Guys",
+   "street": "1030 Main St",
+   "app_ratings_total": 15820,
+   "apps": [
+    "doordash",
+    "ubereats",
+    "grubhub"
+   ],
+   "evidence": "verified",
+   "note": "ranked by total ratings across the apps, a proxy for order volume"
+  },
+  {
+   "name": "Wendy's",
+   "street": "806 Main St",
+   "app_ratings_total": 15156,
+   "apps": [
+    "doordash",
+    "grubhub"
+   ],
+   "evidence": "verified",
+   "note": "ranked by total ratings across the apps, a proxy for order volume"
+  },
+  {
+   "name": "Burger King",
+   "street": "881 Moody St",
+   "app_ratings_total": 14315,
+   "apps": [
+    "doordash",
+    "ubereats",
+    "grubhub"
+   ],
+   "evidence": "verified",
+   "note": "ranked by total ratings across the apps, a proxy for order volume"
+  },
+  {
+   "name": "New Dragon Chef",
+   "street": "677 Moody St",
+   "app_ratings_total": 12984,
+   "apps": [
+    "doordash",
+    "ubereats",
+    "grubhub"
+   ],
+   "evidence": "verified",
+   "note": "ranked by total ratings across the apps, a proxy for order volume"
+  }
+ ],
+ "zones": [
+  {
+   "center": {
+    "lat": 42.36823,
+    "lng": -71.23683
+   },
+   "radius_m": 520,
+   "restaurants": 43,
+   "area_id": 1,
+   "cluster": "Moody Street"
+  },
+  {
+   "center": {
+    "lat": 42.37685,
+    "lng": -71.23838
+   },
+   "radius_m": 590,
+   "restaurants": 32,
+   "area_id": 2,
+   "cluster": "Main Street / Downtown"
+  },
+  {
+   "center": {
+    "lat": 42.41063,
+    "lng": -71.23356
+   },
+   "radius_m": 280,
+   "restaurants": 16,
+   "area_id": 3,
+   "cluster": "Lexington St / Trapelo Rd",
+   "label": {
+    "en": "Lexington St & Trapelo Rd",
+    "es": "Lexington St y Trapelo Rd",
+    "pt": "Lexington St e Trapelo Rd"
+   }
+  },
+  {
+   "center": {
+    "lat": 42.37601,
+    "lng": -71.25002
+   },
+   "radius_m": 350,
+   "restaurants": 16,
+   "area_id": 3,
+   "cluster": "Route 20 west / Market Place",
+   "label": {
+    "en": "Route 20 west & Market Place",
+    "es": "Route 20 oeste y Market Place",
+    "pt": "Route 20 oeste e Market Place"
+   }
+  },
+  {
+   "center": {
+    "lat": 42.39635,
+    "lng": -71.26163
+   },
+   "radius_m": 330,
+   "restaurants": 15,
+   "area_id": null,
+   "name": "Winter Street / Route 128",
+   "label": {
+    "en": "Winter Street / Route 128",
+    "es": "Winter Street / Route 128",
+    "pt": "Winter Street / Route 128"
+   },
+   "cluster": "Winter St / Route 128"
+  },
+  {
+   "center": {
+    "lat": 42.36946,
+    "lng": -71.21984
+   },
+   "radius_m": 200,
+   "restaurants": 6,
+   "area_id": null,
+   "name": "River Street / East Waltham",
+   "label": {
+    "en": "River Street / East Waltham",
+    "es": "River Street / East Waltham",
+    "pt": "River Street / East Waltham"
+   },
+   "cluster": "River St / East Waltham"
+  }
+ ],
+ "map_view": {
+  "lat_min": 42.3539,
+  "lat_max": 42.4195,
+  "lng_min": -71.2736,
+  "lng_max": -71.2115,
+  "note": "Covers every zone with padding. Restaurants in \"Other\" (scattered) are left out of the zones."
+ },
+ "map_features": [
+  {
+   "key": "main_st",
+   "kind": "street",
+   "label": {
+    "en": "Main St / Route 20",
+    "es": "Main St / Route 20",
+    "pt": "Main St / Route 20"
+   },
+   "points": [
+    [
+     42.37628,
+     -71.26309
+    ],
+    [
+     42.37645,
+     -71.24408
+    ],
+    [
+     42.37464,
+     -71.2115
+    ]
+   ],
+   "n_restaurants": 27,
+   "approx": true,
+   "note": "Line through the first, middle, and last restaurant addresses on this street. Simplified, not survey-accurate."
+  },
+  {
+   "key": "moody_st",
+   "kind": "street",
+   "label": {
+    "en": "Moody St",
+    "es": "Moody St",
+    "pt": "Moody St"
+   },
+   "points": [
+    [
+     42.36028,
+     -71.2391
+    ],
+    [
+     42.36841,
+     -71.23723
+    ],
+    [
+     42.37397,
+     -71.23682
+    ]
+   ],
+   "n_restaurants": 32,
+   "approx": true,
+   "note": "Line through the first, middle, and last restaurant addresses on this street. Simplified, not survey-accurate."
+  },
+  {
+   "key": "lexington_st",
+   "kind": "street",
+   "label": {
+    "en": "Lexington St",
+    "es": "Lexington St",
+    "pt": "Lexington St"
+   },
+   "points": [
+    [
+     42.37764,
+     -71.23558
+    ],
+    [
+     42.41031,
+     -71.23438
+    ],
+    [
+     42.41319,
+     -71.23379
+    ]
+   ],
+   "n_restaurants": 18,
+   "approx": true,
+   "note": "Line through the first, middle, and last restaurant addresses on this street. Simplified, not survey-accurate."
+  },
+  {
+   "key": "common",
+   "kind": "landmark",
+   "label": {
+    "en": "Waltham Common",
+    "es": "Waltham Common",
+    "pt": "Waltham Common"
+   },
+   "points": [
+    [
+     42.37556,
+     -71.23611
+    ]
+   ],
+   "approx": true,
+   "note": "Approximate centre of Central Square, which contains the Common. The Common is bounded by Main, Moody, Elm, and Carter Streets: south of Main Street and east of Moody Street. Source: Wikipedia, Central Square Historic District (Waltham)."
+  },
+  {
+   "key": "rt128",
+   "kind": "highway",
+   "label": {
+    "en": "Route 128 / I-95",
+    "es": "Route 128 / I-95",
+    "pt": "Route 128 / I-95"
+   },
+   "points": [
+    [
+     42.3985,
+     -71.2665
+    ]
+   ],
+   "approx": true,
+   "note": "Approximate: just west of the Winter Street / Third Avenue restaurants. Shown as an edge marker, not a drawn road."
+  }
+ ],
+ "radius": {
+  "value": null,
+  "evidence": "unknown",
+  "note": "Each app lets you set a delivery area in its settings. Typical trip length in Waltham is not measured yet."
+ }
+}
